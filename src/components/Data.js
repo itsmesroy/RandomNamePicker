@@ -3,5 +3,13 @@ export const userName=[
     "Sujoy",
     "Hemadri",
     "Ayush",
-    "Ankush"
+    "Ankush",
+    "Biswajit",
+    "Debojit",
+    "Arnab",
+    "Antarag",
+    "Sroweta",
+    "Lakynti",
+    "Liza",
+    "Ashmita"
 ] 
