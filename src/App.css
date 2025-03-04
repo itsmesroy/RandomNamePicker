@@ -1,38 +1,143 @@
 .App {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+body{ background-color: #e1bee7;}
+
+.App-header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.header h1, .header h2 {
+  margin: 0;
+  font-size: 1.5rem; /* Adjust font size as needed */
+  white-space: nowrap; /* Prevent text from breaking onto new lines */
+}
+
+/* User and Winner Lists */
+.username, .winner {
+  list-style-type: none;
+  width: 40%; /* Ensure proper width for the lists */
+  margin: 0;
+  padding: 0;
+}
+
+.username {
+  text-align: left;
+  display: inline-block; /* Keep it in flow with the parent flex container */
+}
+
+.winner {
+  text-align: right;
+  display: inline-block; /* Keep it in flow with the parent flex container */
+}
+
+/* Lists Container */
+.lists-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%; /* Center the container on the page */
+  margin: 20px auto;
+}
+
+/* Winner list container */
+.winner {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  width: 80%; /* Adjust width as needed */
+}
+
+/* Individual winner item */
+.winner-item {
+  border: 2px solid #a601f9; /* Add a border to each winner */
+  margin: 10px 0; /* Add spacing between each winner */
+  padding: 10px; /* Add padding inside the border */
+  border-radius: 8px; /* Round the corners */
+  text-align: center; /* Center align the text */
+  background-color: #f9f9f9; /* Light background color for contrast */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  color: #333; /* Set text color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for winner items */
+.winner-item:hover {
+  background-color: #00d8ff; /* Change background on hover */
+  transform: scale(1.03); /* Slightly enlarge the item */
+}
+
+
+/* Button Styling */
+button {
+  margin: 20px auto;
+  display: block;
+  width: 15rem;
+  height: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
   color: white;
+  background-color: #a601f9;
 }
 
-.App-link {
-  color: #61dafb;
+/* Progress Bar */
+#progress {
+  position: relative;
+  margin: 20px auto;
+  height: 10px;
+  width: 30%;
+  border: 7px solid #00d8ff;
+  border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#progress .color {
+  position: absolute;
+  background-color: #1a8ad5;
+  width: 0px;
+  height: 10px;
+  border-radius: 15px;
+  animation: progress 3s linear forwards;
+}
+
+/* Animation Keyframes */
+@keyframes progress {
+  0% {
+    width: 0%;
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    width: 50%;
+    background-color: #e7f6f9;
+  }
+  50% {
+    width: 75%;
+    background-color: #bff4fd;
+  }
+  75% {
+    width: 85%;
+    background-color: #ffe600;
+  }
+  85% {
+    width: 95%;
+    background-color: #ff6f00;
+  }
+  100% {
+    width: 100%;
+    background-color: #a601f9;
   }
 }
