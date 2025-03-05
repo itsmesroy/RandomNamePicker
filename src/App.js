@@ -34,8 +34,8 @@ function App() {
         console.log("No more users left to select as winners.");
       }
       confetti({
-        particleCount: 200, // Number of confetti particles
-        spread: 360, // Spread angle
+        particleCount: 700, // Number of confetti particles
+        spread: 400, // Spread angle
         origin: { x: 0.5, y: 0.5 }, // Start from center of the screen
         zIndex: 1000, // Ensure it appears above all elements
       });
