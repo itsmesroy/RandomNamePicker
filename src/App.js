@@ -2,6 +2,7 @@ import './App.css';
 import { userName } from "./components/Data";
 import { useState, React } from 'react';
 import Loading from './components/Loading'; 
+import confetti from "canvas-confetti";
 
 function App() {
   const [users, setUsers] = useState(userName);
@@ -32,6 +33,12 @@ function App() {
       } else {
         console.log("No more users left to select as winners.");
       }
+      confetti({
+        particleCount: 200, // Number of confetti particles
+        spread: 360, // Spread angle
+        origin: { x: 0.5, y: 0.5 }, // Start from center of the screen
+        zIndex: 1000, // Ensure it appears above all elements
+      });
       setUiProps({ buttonDisable: false, progressBar: false });
     }, 4000);
   };
