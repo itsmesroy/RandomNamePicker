@@ -38,16 +38,8 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="header">
-          <h1>My Medy X The BlackBelt Chef</h1>
-          <h2>Lucky Draw Contest</h2>
-        </div>
-        <ul className="username">
-          {users.map((user, index) => (
-            <li key={index} >{user}</li>
-          ))}
-        </ul>
+      
+        
         <ul className="winner">
         {winner.length > 0 && <h3 style={{ fontSize: '1.5rem', textAlign: 'center', fontWeight: 'bold', margin: '20px 0'}}>Winners Selected</h3>}
           {winner.map((winner, index) => (
@@ -58,7 +50,12 @@ function App() {
         <button onClick={handleSearch} disabled={uiProps.buttonDisable}>
           Click Here to get the Winner
         </button>
-      </header>
+        <ul className="username">
+          {users.map((user, index) => (
+            <li key={index} >{user}</li>
+          ))}
+        </ul>
+    
     </div>
   );
 }
