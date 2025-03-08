@@ -37,7 +37,7 @@ display: flex;
   grid-template-columns: repeat(3, 1fr); /* Explicitly set 3 columns */
   gap: 5px; /* Space between items */
   width: 50%; /* Control overall width */
-  max-height: 25vh; /* Allow space for 30 items to fit */
+  max-height: 50vh; /* Allow space for 30 items to fit */
   overflow-y: auto; /* Scrollable if items exceed the height */
   text-align: center; /* Center align the text in items */
  }
