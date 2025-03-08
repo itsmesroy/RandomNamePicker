@@ -48,7 +48,7 @@ function App() {
       
         
         <ul className="winner">
-        {winner.length > 0 && <h3 style={{ fontSize: '1.5rem', textAlign: 'center', fontWeight: 'bold', margin: '20px 0'}}>Winners Selected</h3>}
+        {winner.length > 0 && <h3 style={{ fontSize: '1.5rem', textAlign: 'center', fontWeight: 'bold', margin: '20px 0'}}>Winner Selected</h3>}
           {winner.map((winner, index) => (
             <li key={index} className="winner-item">{winner}</li>
           ))}
