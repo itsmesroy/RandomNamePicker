@@ -36,7 +36,7 @@ display: flex;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Explicitly set 3 columns */
   gap: 5px; /* Space between items */
-  width: 50%; /* Control overall width */
+  width: 90%; /* Control overall width */
   max-height: 50vh; /* Allow space for 30 items to fit */
   overflow-y: auto; /* Scrollable if items exceed the height */
   text-align: center; /* Center align the text in items */
@@ -47,7 +47,7 @@ display: flex;
  
   border-radius: 5px;
   background-color: #f9f9f9;
-  font-size: "1px"; /* Font size adjustment */
+  font-size: 15px; /* Font size adjustment */
   font-weight: bold;
   text-align: center;
   color: #333;
@@ -105,7 +105,7 @@ button {
   cursor: pointer;
   color: white;
   background-color: #a601f9;
-
+  padding: 5px;
 }
 
 /* Progress Bar */
