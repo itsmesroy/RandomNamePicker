@@ -97,7 +97,8 @@ display: flex;
 
 /* Button Styling */
 button {
-  margin-top: auto ;
+  
+  margin: 20px auto;
   display: block;
   width: 15rem;
   height: 2rem;
