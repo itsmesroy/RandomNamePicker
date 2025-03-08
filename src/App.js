@@ -26,9 +26,9 @@ function App() {
     setTimeout(() => {
       const random = randomUser();
       if (random) {
-        setWinner([...winner, random]); // Add to winner list
-        const updatedUsers = users.filter((user) => user !== random); // Remove from users
-        setUsers(updatedUsers); // Update user list
+        setWinner([...winner, random]); 
+        const updatedUsers = users.filter((user) => user !== random); 
+        setUsers(updatedUsers); 
         console.log(`Winner Selected: ${random}`);
       } else {
         console.log("No more users left to select as winners.");
@@ -59,7 +59,7 @@ function App() {
         </button>
         <ul className="username">
           {users.map((user, index) => (
-            <li key={index} >{user}</li>
+            <li key={index} className="username-list-item">{user}</li>
           ))}
         </ul>
     
